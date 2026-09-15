@@ -2,48 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>AboutPage</title>
-      <link rel="stylesheet" href="../_shared.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Edu-Motherwell Development Organisation</title>
+    
+    <!-- Shared and Page Stylesheets -->
+    <link rel="stylesheet" href="../_shared.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
- <header class="site-header">
+
+    <!-- Site Header -->
+    <header class="site-header">
         <div class="container header-inner">
             <div class="logo-container">
-        <img src="../images/Company.logo.jpg" alt="Edu-Motherwell Development Organisation Logo" class="logo-img">
-    </div>
-            <a class="brand" href="index.html">Edu-Motherwell Development Organisation</a>
-
+                <img src="../images/Company.logo.jpg" alt="Edu-Motherwell Development Organisation Logo" class="logo-img">
+            </div>
+            <a class="brand" href="../index.html">Edu-Motherwell Development Organisation</a>
 
             <nav class="site-nav" aria-label="Main navigation">
                 <a href="../index.html">Home</a>
-                <a href="about.html">About</a>
+                <a href="about.html" aria-current="page">About</a>
                 <a href="services.html">Services</a>
-
                 <a href="enquiry.html">Enquiry</a>
                 <a href="contactus.html">Contact Us</a>
             </nav>
         </div>
     </header>
 
-<h1>Brief History</h1>
-<p>Edu-Motherwell Development Organisation was founded in 2008 in Gqeberha. This organisation assists in community-level of having crises of youth unemployment and low-educational resources in the communities.</p>
-<h1>Mission Statement</h1>
-<p>It assists youth to find and develop their talents, and to realize their potential in life. It creates opportunities for impoverished particularly youth to get a quality education.</p>
-<h1>Vision Statement</h1>
-<p>Is to overflow South African youth communities, local graduates to break the cycle of poverty. Serving as role models for future generations and drive community transformation.</p>
+    <!-- Main Content Area -->
+    <main class="about-container">
+        <header class="about-hero">
+            <h1>About Our Organisation</h1>
+            <p>Empowering youth and transforming communities through quality education, talent development, and resource support in Gqeberha.</p>
+        </header>
 
-<style>
-    body{
-        background-color: white;
-    }
-</style>
-</body>
-</html>
+        <!-- 3-Card Grid Section -->
+        <section class="about-cards-grid">
+            
+            <!-- History Card -->
+            <article class="about-card">
+                <div class="card-icon" aria-hidden="true">📜</div>
+                <h2>Brief History</h2>
+                <p>Edu-Motherwell Development Organisation was founded in 2008 in Gqeberha. This organisation assists at the community level to address youth unemployment and low educational resources in our local communities.</p>
+            </article>
 
-<footer class="site-footer">
+            <!-- Mission Card -->
+            <article class="about-card highlight-card">
+                <div class="card-icon" aria-hidden="true">🎯</div>
+                <h2>Mission Statement</h2>
+                <p>To assist youth in finding and developing their talents, realizing their potential in life, and creating opportunities for impoverished youth to access quality education.</p>
+            </article>
+
+            <!-- Vision Card -->
+            <article class="about-card">
+                <div class="card-icon" aria-hidden="true">👁️</div>
+                <h2>Vision Statement</h2>
+                <p>To overflow South African youth communities with local graduates who break the cycle of poverty, serve as role models for future generations, and drive community transformation.</p>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-col">
                 <h4>Edu-Motherwell</h4>
@@ -63,7 +84,7 @@
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="enquiry.html">Get Involved</a></li>
                     <li><a href="contactus.html">Contact Us</a></li>
@@ -75,13 +96,14 @@
                 <p>Tel: 041 110 1100</p>
                 <p>Email: info@edumotherwell.co.za</p>
                 <div class="social-links">
-                    <a href="https://facebook.com" target="_blank">Facebook</a>
-                    <a href="https://instagram.com" target="_blank">Instagram</a>
-                    <a href="https://x.com" target="_blank">X</a>
-                    <a href="https://youtube.com" target="_blank">YouTube</a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
                 </div>
             </div>
         </div>
+        
         <div class="footer-bottom">
             <p>&copy; 2026 Edu-Motherwell Development Organisation. All rights reserved.</p>
         </div>

@@ -3,89 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EnquiryPage</title>
-      <link rel="stylesheet" href="../_shared.css">
-
-    <link rel="stylesheet" href="../css/style.css">
-
-</head>
-<body>
-   <header class="site-header">
-        <div class="container header-inner">
-            <div class="logo-container">
-        <img src="../images/Company.logo.jpg" alt="Edu-Motherwell Development Organisation Logo" class="logo-img">
-         </div>
-            <a class="brand" href="index.html">Edu-Motherwell Development Organisation</a>
+    <title>Enquiry Page - Edu-Motherwell Development Organisation</title>
 
     
+    <link rel="stylesheet" href="../_shared.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-container">
+                <img src="../images/Company.logo.jpg" alt="Edu-Motherwell Development Organisation Logo" class="logo-img">
+            </div>
+            <a class="brand" href="../index.html">Edu-Motherwell Development Organisation</a>
+
             <nav class="site-nav" aria-label="Main navigation">
                 <a href="../index.html">Home</a>
                 <a href="about.html">About</a>
-                <a href="services.html" aria-current="page">Services</a>
-
-                <a href="enquiry.html">Enquiry</a>
+                <a href="services.html">Services</a>
+                <a href="enquiry.html" aria-current="page">Enquiry</a>
                 <a href="contactus.html">Contact Us</a>
             </nav>
         </div>
     </header>
 
-<fieldset>
-<legend><strong>Your Personal Information</strong></legend>
-<br>
-                   
-<label for="fullname">Full Name:</label><br>
-<input type="text" id="fullname" name="fullname" placeholder="e.g. Thandeka Ngambu" required><br><br>
+   
+    <main class="enquiry-container">
+        <header class="page-header">
+            <h1>Make an Enquiry</h1>
+            <p>Fill out the form below to get in touch or find out how you can get involved.</p>
+        </header>
 
-<label for="email">Email Address:</label><br>
-<input type="email" id="email" name="email" placeholder="e.g. thandekangambu@example.com" required><br><br>
+        <section class="enquiry-card">
+            <form action="#" method="post">
+                
+              
+                <fieldset>
+                    <legend>Your Personal Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="fullname">Full Name *</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="e.g. Thandeka Ngambu" required>
+                    </div>
 
-<label for="phone">Phone / WhatsApp Number:</label><br>
-<input type="tel" id="phone" name="phone" placeholder="e.g. 078 922 7834"><br><br>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="e.g. thandekangambu@example.com" required>
+                    </div>
 
-<label for="location">Newton Park in Gqeberha:</label><br>
-<input type="text" id="location" name="location" placeholder="e.g. Newton Park , Port Elizabeth"><br><br>
-</fieldset>
-<br>
+                    <div class="form-group">
+                        <label for="phone">Phone / WhatsApp Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="e.g. 078 922 7834">
+                    </div>
 
+                    <div class="form-group">
+                        <label for="location">Location / Suburb</label>
+                        <input type="text" id="location" name="location" placeholder="e.g. Newton Park, Gqeberha">
+                    </div>
+                </fieldset>
 
-<fieldset>
-<legend><strong>Enquiry</strong></legend>
-<br>
+                <fieldset>
+                    <legend>Enquiry Details</legend>
 
-<label for="category">Enquiry Category:</label><br>
-<select id="category" name="category" required>
-<option value="" disabled selected>-- Select an Enquiry Type --</option>
-<option value="general">General Enquiry</option>
-</select><br><br>
+                    <div class="form-group">
+                        <label for="category">Enquiry Category *</label>
+                        <select id="category" name="category" required>
+                            <option value="" disabled selected>-- Select an Enquiry Type --</option>
+                            <option value="general">General Enquiry</option>
+                            <option value="volunteer">Volunteering & Upliftment</option>
+                            <option value="educational">Educational Support Program</option>
+                        </select>
+                    </div>
 
-<label>Preferred Availability for :</label><br>
-<input type="checkbox" id="avail_Tuesday" name="availability[]" value="avail_Tuesday">
-<label for="avail_Tuesday">Tuesday</label><br>
-                   
-<input type="checkbox" id="avail_Wednesday" name="availability[]" value="Wednesday">
-<label for="avail_sunday">Wednesday</label><br>
-                   
-<input type="checkbox" id="avail_weekdays" name="availability[]" value="Weekdays">
-<label for="avail_weekdays">Weekdays</label><br><br>
+                    <div class="form-group">
+                        <label>Preferred Availability:</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="avail_Tuesday" name="availability[]" value="Tuesday">
+                                <label for="avail_Tuesday">Tuesday</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="avail_Wednesday" name="availability[]" value="Wednesday">
+                                <label for="avail_Wednesday">Wednesday</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="avail_weekdays" name="availability[]" value="Weekdays">
+                                <label for="avail_weekdays">Weekdays</label>
+                            </div>
+                        </div>
+                    </div>
 
-<label for="message"> Specific Request:</label><br>
-<textarea id="message" name="message" rows="6" cols="50" placeholder="Please tell us more about your enquiry or how you'd like to get involved..." required></textarea><br><br>
- </fieldset>
-<br>
-               
-</form>
-</section>
-</main>
+                    <div class="form-group">
+                        <label for="message">Specific Request *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Please tell us more about your enquiry or how you'd like to get involved..." required></textarea>
+                    </div>
+                </fieldset>
 
-<style>
-    body{
-        background-color: white;
-    }
-</style>
-</body>
-</html>
+                <button type="submit" class="submit-btn">Submit Enquiry</button>
 
-<footer class="site-footer">
+            </form>
+        </section>
+    </main>
+
+   
+    <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-col">
                 <h4>Edu-Motherwell</h4>
@@ -105,7 +128,7 @@
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="enquiry.html">Get Involved</a></li>
                     <li><a href="contactus.html">Contact Us</a></li>
@@ -117,16 +140,18 @@
                 <p>Tel: 041 110 1100</p>
                 <p>Email: info@edumotherwell.co.za</p>
                 <div class="social-links">
-                    <a href="https://facebook.com" target="_blank">Facebook</a>
-                    <a href="https://instagram.com" target="_blank">Instagram</a>
-                    <a href="https://x.com" target="_blank">X</a>
-                    <a href="https://youtube.com" target="_blank">YouTube</a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
                 </div>
             </div>
         </div>
+
         <div class="footer-bottom">
             <p>&copy; 2026 Edu-Motherwell Development Organisation. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 </html>

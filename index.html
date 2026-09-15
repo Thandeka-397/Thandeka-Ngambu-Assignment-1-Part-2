@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePage</title>
+    <title>HomePage - Edu-Motherwell Development Organisation</title>
     <link rel="stylesheet" href="_shared.css">
     <link rel="stylesheet" href="./css/style.css">
     <style>
@@ -24,14 +24,13 @@
 <body>
     <header class="site-header">
         <div class="container header-inner">
-
             <div class="logo-container">
                 <img src="images/Company.logo.jpg" alt="Edu-Motherwell Development Organisation Logo" class="logo-img">
             </div>
             <a class="brand" href="index.html">Edu-Motherwell Development Organisation</a>
             
             <nav class="site-nav" aria-label="Main navigation">
-                <a href="index.html">Home</a>
+                <a href="index.html" aria-current="page">Home</a>
                 <a href="pages/about.html">About</a>
                 <a href="pages/services.html">Services</a>
                 <a href="pages/enquiry.html">Enquiry</a>
@@ -40,16 +39,41 @@
         </div>
     </header>
     
-    <main>
-        <h1 style="text-align: center;">Welcome To Edu-Motherwell Development Organisation!</h1>
-        <img src="images/school-org.jpg" alt="School Organisation">
-        <h2>Empowering Communities and Transforming Education</h2>
-        <p>Edu-Motherwell Development Organisation is dedicated to combating low educational outcomes and high youth unemployment in Gqeberha.</p>
+    <main class="home-container">
+        <!-- Hero Section -->
+        <section class="home-hero">
+            <h1>Welcome To Edu-Motherwell Development Organisation!</h1>
+            <p>Empowering vulnerable communities, uplifting youth, and driving educational excellence in Gqeberha.</p>
+        </section>
 
-        <h3>Dedicated Education and Youth Development Support</h3>
-        <p>Through our literacy and numeracy programs, our team and partners work alongside local youth and schools to support foundational learning.</p>
-        
-        <img src="images/1600px_COLOURBOX14862248.jpg" alt="Children learning">
+        <!-- 2 Feature Cards Section -->
+        <section class="home-cards-grid">
+            
+            <!-- Card 1 -->
+            <article class="feature-card">
+                <div class="card-image-wrapper">
+                    <img src="images/school-org.jpg" alt="School Organisation" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h2>Empowering Communities and Transforming Education</h2>
+                    <p>Edu-Motherwell Development Organisation is dedicated to combating low educational outcomes and high youth unemployment in Gqeberha through targeted interventions and community-driven initiatives.</p>
+                    <a href="pages/about.html" class="card-btn">Learn More</a>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="feature-card">
+                <div class="card-image-wrapper">
+                    <img src="images/1600px_COLOURBOX14862248.jpg" alt="Children learning" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h2>Dedicated Education and Youth Development Support</h2>
+                    <p>Through our literacy and numeracy programs, our team and partners work alongside local youth and schools to support foundational learning and foster academic confidence.</p>
+                    <a href="pages/services.html" class="card-btn">Our Programs</a>
+                </div>
+            </article>
+
+        </section>
     </main>
 
     <footer class="site-footer">
@@ -84,10 +108,10 @@
                 <p>Tel: 041 110 1100</p>
                 <p>Email: info@edumotherwell.co.za</p>
                 <div class="social-links">
-                    <a href="https://facebook.com" target="_blank">Facebook</a>
-                    <a href="https://instagram.com" target="_blank">Instagram</a>
-                    <a href="https://x.com" target="_blank">X</a>
-                    <a href="https://youtube.com" target="_blank">YouTube</a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
                 </div>
             </div>
         </div>
