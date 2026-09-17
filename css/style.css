@@ -34,79 +34,141 @@ a {
     transition: 0.25s ease;
 }
 
-/* Header & Navigation */
-/* Header & Navigation */
+/* ==========================================
+   Modern Header & Navigation Styling
+   ========================================== */
+
+/* Main Header Container */
 .site-header {
-    background-color: var(--primary);
-    border-bottom: 4px solid var(--accent);
+    background: linear-gradient(135deg, #ffd600 0%, #ffca00 100%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-block: 0.25rem;
 }
 
 .header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 80px;
+    min-height: 85px;
     gap: 1.5rem;
-    padding-block: 0.5rem; /* Ensures vertical breathing room for logo */
+    padding-block: 0.5rem;
 }
 
-/* Logo Sizing & Rounded Frame Styling */
+/* Brand Grouping (Logo + Organization Name) */
+.brand-group {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    text-decoration: none;
+}
+
+/* Floating White Card Logo Container */
 .logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0; /* Prevents logo from shrinking when window resizes */
+    background-color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0;
+}
+
+.logo-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 .logo-img {
-    height: 55px; /* Restricts vertical size to fit comfortably in navbar */
-    width: auto; /* Maintains natural aspect ratio */
+    height: 48px;
+    width: auto;
     object-fit: contain;
-    background-color: var(--surface); /* White background inside the frame */
-    border: 3px solid var(--primary); /* Yellow frame using var(--primary) */
-    outline: 2px solid var(--accent); /* Dark outline for sharp contrast on yellow header */
-    border-radius: 12px; /* Smooth rounded corners */
-    padding: 3px; /* Inner padding between logo image and border */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Soft drop shadow */
-    transition: transform 0.25s ease;
+    display: block;
 }
 
-.logo-img:hover {
-    transform: scale(1.05); /* Subtle hover effect */
-}
-
+/* Organization Title Styling */
 .brand {
-    color: #0e0c0c;
-    font-size: 1.25rem;
-    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 1.15rem;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    max-width: 280px;
 }
 
+/* Navigation Links Bar */
 .site-nav {
     display: flex;
-    gap: 0.35rem;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .site-nav a {
-    padding: 0.7rem 0.9rem;
-    border-radius: 6px;
-    color: #0e0c0c;
-    font-weight: bold;
+    padding: 0.6rem 1.1rem;
+    border-radius: 30px;
+    color: #111111;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.01em;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
 }
 
+/* Hover & Focus Interactions */
 .site-nav a:hover {
-    background-color: var(--accent);
-    color: var(--primary-dark);
+    background-color: #111111;
+    color: #ffd600;
     transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .site-nav a:focus-visible {
-    outline: 3px solid #0e0c0c;
-    outline-offset: 2px;
+    outline: 3px solid #111111;
+    outline-offset: 3px;
 }
 
+/* Active Page Button Highlight */
 .site-nav a[aria-current="page"] {
-    background-color: #ffffff;
-    color: var(--primary);
+    background-color: #111111;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Rules for Mobile Header */
+@media (max-width: 900px) {
+    .header-inner {
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+
+    .brand-group {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+
+    .brand {
+        max-width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .site-nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 0.35rem;
+    }
+
+    .site-nav a {
+        padding: 0.5rem 0.85rem;
+        font-size: 0.9rem;
+    }
 }
 
 /* Page Headers & General Layout */
