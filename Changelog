@@ -1,45 +1,33 @@
-### `CHANGELOG.md`
-
-```markdown
 # Changelog
 
-All notable changes to the **Edu-Motherwell Development Organisation** web project will be documented in this file.
 
-The format is based on [Keep a Changelog](https.keepachangelog.com/en/1.0.0/), and this project adheres to Semantic Versioning (`v1.0.0`).
+All notable changes to the **Edu-Motherwell Development Organisation Website** project will be documented in this file.
 
----
-
-## [1.2.0] - 2026-09-15
-
-### Added
-* Integrated a modern 2-card feature layout on `index.html` combining key text highlights with structured image banners.
-* Redesigned `about.html` into a modern 3-card grid layout highlighting **Brief History**, **Mission Statement**, and **Vision Statement** with visual badge icons.
-
-### Changed
-* Refactored global form styles in `style.css` to ensure all input labels, headers, and legends render in high-contrast explicit black text (`#000000`).
-* Improved responsive breakpoint handling for tablet and desktop views across all primary pages.
-
-### Fixed
-* Fixed broken HTML document structures, misplaced closing tags (`</main>`, `</form>`), and improper viewport meta tag syntax across subpages.
-* Corrected element ID mismatches in input `label[for]` attributes on `enquiry.html`.
-* Placed `<footer>` elements inside valid `<body>` parent containers across all pages.
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
-## [1.1.0] - 2026-09-10
+## [1.0.0] - 2026-09-17
+
 
 ### Added
-* Integrated interactive Enquiry Page (`enquiry.html`) with form fieldsets for Personal Information, Location, Enquiry Category, Availability, and Specific Request fields.
-* Added standard site header, logo containers, and responsive site navigation bar across all subpages.
+- **Core Site Structure & HTML Pages**:
+  - `index.html`: Main landing page introducing the organisation, mission, and key highlights.
+  - `pages/About.html`: Background information, history, vision, and organizational values.
+  - `pages/services.html`: Overview of community development, literacy, and educational programs offered.
+  - `pages/Enquiry.html`: Form page allowing community members and prospective partners to submit general inquiries.
+  - `pages/ContactUs.html`: Contact details, physical location information, and direct communication channels.
 
-### Changed
-* Separated internal `<style>` block declarations from HTML documents into external stylesheet `css/style.css`.
 
----
+- **Stylesheets & Layout**:
+  - `css/style.css`: Primary CSS file defining color palettes, typography, responsive layouts, header/footer styling, and form element styles.
 
-## [1.0.0] - 2026-08-28
 
-### Added
-* Initial project setup and core file structure creation.
-* Basic semantic HTML structure for `index.html`, `about.html`, `services.html`, and `contactus.html`.
-* Integrated shared organizational footer containing contact details, quick links, and social media links.
+- **Visual Assets**:
+  - `images/Company.logo.jpg`: Custom organizational header logo.
+  - Program and event imagery including `Literacy.jpg`, `school-org.jpg`, `Picture-12.jpg`, `IMG_2302.jpg`, `1600px_COLOURBOX14862248.jpg`, and `facebook.logo.avif`.
+
+
+- **Documentation**:
+  - Initial `README.md` containing repository overview, structure, usage instructions, and Harvard-formatted references.
+  - Initial `CHANGELOG.md` to track project revision history.
