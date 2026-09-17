@@ -1,0 +1,46 @@
+# Edu-Motherwell Development Organisation Website
+
+A modern, responsive, and accessible static website designed for the Edu-Motherwell Development Organisation in Motherwell, Gqeberha. This platform showcases community programs, provides organisational background, and enables community members, partners, and volunteers to get in touch.
+
+---
+
+## 📌 Project Overview
+
+* **Organisation Name:** Edu-Motherwell Development Organisation
+* **Location:** Motherwell, Gqeberha, South Africa
+* **Primary Objective:** Empower vulnerable communities, uplift local youth, and combat low educational outcomes through literacy, numeracy, and resource support.
+* **Tech Stack:** HTML5, CSS3, JavaScript (vanilla)
+
+---
+
+## 📁 File & Directory Structure
+
+```text
+edu-motherwell-website/
+│
+├── index.html              # Main landing page (Hero & Feature Cards)
+├── _shared.css             # Shared global layout & navigation styles
+│
+├── css/
+│   └── style.css           # Page-specific component styles (Cards, Forms, Grid)
+│
+├── images/
+│   ├── Company.logo.jpg    # Organisation logo
+│   ├── school-org.jpg      # Community & school initiative showcase
+│   └── 1600px_COLOURBOX.jpg# Literacy & foundational learning image
+│
+├── pages/
+│   ├── about.html          # Organisational History, Mission, and Vision cards
+│   ├── services.html       # Detailed overview of educational & youth services
+│   ├── enquiry.html        # Interactive enquiry form with category selection
+│   └── contactus.html      # Contact details, opening hours, and embedded map
+│
+├── README.md               # Project documentation
+└── CHANGELOG.md            # Version history and development log
+
+References
+Duckett, J., 2011. HTML and CSS: Design and Build Websites. Indianapolis: John Wiley & Sons.
+
+Mozilla Developer Network (MDN), 2026. HTML: HyperText Markup Language. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML [Accessed 15 September 2026].
+
+World Wide Web Consortium (W3C), 2023. Web Content Accessibility Guidelines (WCAG) 2.2. Available at: https://www.w3.org/TR/WCAG22/ [Accessed 15 September 2026].
